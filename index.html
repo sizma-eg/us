@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -2979,6 +2980,7 @@ footer{
         <span class="currency">
             EGP
         </span>
+
     </div>
 
 
@@ -4135,7 +4137,6 @@ document
    WHATSAPP
 ========================================================= */
 
-
 const WHATSAPP_NUMBER =
     "201037500636";
 
@@ -4153,24 +4154,6 @@ wa.addEventListener(
         e.preventDefault();
 
 
-        if(
-            WHATSAPP_NUMBER ===
-            "201037500636"
-        ){
-
-            alert(
-                document.body.classList.contains("en")
-                ?
-                "Replace WHATSAPP_NUMBER with your WhatsApp number."
-                :
-                "بدّل WHATSAPP_NUMBER في الكود برقم واتسابك."
-            );
-
-            return;
-
-        }
-
-
         const message =
             encodeURIComponent(
                 document.body.classList.contains("en")
@@ -4184,7 +4167,7 @@ wa.addEventListener(
         window.open(
             "https://wa.me/"
             +
-            "01037500636"
+            WHATSAPP_NUMBER
             +
             "?text="
             +
@@ -4200,3 +4183,5 @@ wa.addEventListener(
 
 </body>
 </html>
+```
+
